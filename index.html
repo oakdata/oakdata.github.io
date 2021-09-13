@@ -21,6 +21,7 @@
 	<link href="css/animations.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
+	<link href="css/leaderboard.css" rel="stylesheet">
 </head>
 
 <body class="no-trans">
@@ -284,10 +285,80 @@
 					<!-- isotope filters start -->
 					<div class="filters text-center">
 						<ul class="nav nav-pills">
-							<li><a href="#" data-filter=".object_detection">Object Detection</a></li>
-							<li><a href="#" data-filter=".image_classification">Image Classification</a></li>
+							<li><button onclick="odLeaderboard()">Object Detection</button></li>
+							<li><button onclick="icLeaderboard()">Image Classification</button></li>
+							<!-- <li><a href="#" data-filter=".object_detection">Object Detection</a></li>
+							<li><a href="#" data-filter=".image_classification">Image Classification</a></li> -->
+							<!-- <li><a href="#" data-filter=".object_detection">Object Detection</a></li>
+							<li><a href="#" data-filter=".image_classification">Image Classification</a></li> -->
 						</ul>
 					</div>
+
+					<div id="odTable">
+						<section id="scrims-ladder--container" class="scrims-ladder">
+							<div class="ladder-nav">
+								<div class="ladder-nav--col ladder-title">
+									<h1>Standings</h1>
+							  	</div>
+								<div class="ladder-nav--col">
+									<input type="text" class="ladder-search" placeholder="Search Team, Method..." />
+								</div>
+							</div>
+							<div class="ladder-nav--results">
+							  	<div class="ladder-nav--results-col">
+									<label>Rank</label>
+							  	</div>
+							  	<div class="ladder-nav--results-col">
+									<label>Method</label>
+							  	</div>
+							  	<div class="ladder-nav--results-col">
+									<label>Team Name</label>
+							  	</div>
+							  	<div class="ladder-nav--results-col">
+									<label>FAP</label>
+							  	</div>
+							  	<div class="ladder-nav--results-col">
+									<label>CAP</label>
+							  	</div>
+							  	<div class="ladder-nav--results-col">
+									<label>F</label>
+								</div>
+								<div class="ladder-nav--results-col">
+									<label>FWT</label>
+								</div>
+								<div class="ladder-nav--results-col">
+									<label>BWT</label>
+							  	</div>
+							</div>
+							<div class="ladder-nav--results-players">
+							  	<div class="results-col">
+									<span class="results-rank"><span class="positions">1</span></span>
+							  	</div>
+							  	<div class="results-col">
+									<span class="results-method">iCarl</span>
+							  	</div>
+							  	<div class="results-col">
+									<span class="results-team">-</span>
+							  	</div>
+							  	<div class="results-col">
+									<span class="results-fap">21.89</span>
+							  	</div>
+							  	<div class="results-col">
+									<span class="results-cap">16.39</span>
+							  	</div>
+							  	<div class="results-col">
+									<span class="results-f">1.78</span>
+								</div>
+								<div class="results-col">
+									<span class="results-fwt">15.73</span>
+							  	</div>
+							  	<div class="results-col">
+									<span class="results-bwt">-5.95</span>
+							  	</div>
+							</div>
+						</section>
+					</div>
+				
 					<!-- isotope filters end -->
 
 					<!-- portfolio items start -->
@@ -1421,6 +1492,26 @@
 
 	<!-- Custom Scripts -->
 	<script type="text/javascript" src="js/custom.js"></script>
+	<script>
+		function odLeaderboard() {
+		  var x = document.getElementById("odTable");
+		  if (x.style.display === "none") {
+			x.style.display = "block";
+		  } else {
+			x.style.display = "none";
+		  }
+		}
+	</script>
+	<script>
+		function icLeaderboard() {
+		  var x = document.getElementById("icTable");
+		  if (x.style.display === "none") {
+			x.style.display = "block";
+		  } else {
+			x.style.display = "none";
+		  }
+		}
+	</script>
 
 </body>
 

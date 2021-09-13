@@ -440,7 +440,21 @@ text-align:center;
 	border-color: #DB0A61;
 	color: #ffffff;
 }
+.nav-pills > li > button:hover {
+	background-color: #DB0A61;
+	border-color: #DB0A61;
+	color: #ffffff;
+}
 .nav-pills > li > a {
+	border-radius: 0;
+	padding: 8px 20px;
+	border: 1px solid #cacaca;
+	color: #666666;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+.nav-pills > li > button {
 	border-radius: 0;
 	padding: 8px 20px;
 	border: 1px solid #cacaca;
