@@ -1,0 +1,113 @@
+#scrims-ladder--container {
+        padding:50px;
+    }
+    .ladder-nav {
+        display:flex;
+        flex-wrap:wrap;
+        align-items: center;
+        background:#dd377c;
+        padding:10px 25px;
+        border-radius:10px;
+        border:1px solid #DB0A61;
+    }
+    .ladder-title {
+        flex:2;
+    }
+    .ladder-nav--col:nth-child(n+2) {
+        flex:1;
+    }
+    .ladder-nav h1 {
+        margin-bottom:0px;
+        line-height:1;
+    }
+    .ladder-nav h1, .bracket-title {
+        font-size:20px;
+        color:#FFFFFF!important;
+        font-weight:bold;
+        text-transform:uppercase;
+    }
+    .bracket-title ul, .bracket-title li {
+        display:inline;
+    }
+    /* Results Nav */
+    .ladder-nav--results, .ladder-nav--results-players {
+        display:flex;
+        flex-wrap:wrap;
+        padding:15px 25px;
+    }
+    .ladder-nav--results label {
+        color:#666666;
+        font-size:18px;
+        font-weight:bold;
+    }
+    .ladder-nav--results-col, .results-col {
+        flex:1;
+        align-items:center;
+        text-align:center;
+    }
+    
+    .scrims-ladder .ladder-nav--results-players:nth-of-type(1) {
+        color: #DB0A61;
+    }
+    .results-col {
+        font-size:18px;
+        color:#747474;
+        font-weight:light;
+        align-items:center;
+        text-align:center;
+    }
+    .results-col:hover {
+        font-size:18px;
+        color:#dbdada;
+        font-weight:light;
+    }
+    .results-rank {
+        display:block;
+        background: #DB0A61;
+        color:white!important;
+        font-weight:bold;
+        width:34px;
+        height:34px;
+        border-radius:50%;
+    }
+    .ladder-nav--results {
+        margin:5px 0px;
+        align-items:center;
+        text-align:center;
+    }
+    .ladder-nav--results-players {
+        background:#dbdada;
+        border-radius:10px;
+        margin:5px 0px;
+        align-items:center;
+        text-align:center;
+    }
+    .results-rank {
+        text-align:center;
+        align-items:center;
+    }
+    .positions {
+        vertical-align:middle;
+    }
+    .ladder-nav--results-players:hover {
+        background: #DB0A61;
+    }
+    .ladder-nav input[type=text]:focus {
+        border:1px solid #dd6c6c;
+    }
+    .ladder-search {
+        background:#DB0A61;
+        color:rgb(248, 157, 157)!important;
+    }
+    .ladder-search::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #dbdadac7;
+    }
+    .ladder-search::-moz-placeholder { /* Firefox 19+ */
+        color: #dbdadac7;
+    }
+    .ladder-search:-ms-input-placeholder { /* IE 10+ */
+        color: #dbdadac7;
+    }
+    .ladder-search:-moz-placeholder { /* Firefox 18- */
+        color:  #dbdadac7;
+    }
