@@ -79,8 +79,8 @@
 										id="navbar-collapse-1">
 										<ul class="nav navbar-nav navbar-right">
 											<li><a href="#wanderlust">Wanderlust</a></li>
-											<li><a href="#resources">Resources</a></li>
 											<li><a href="#tasks">Tasks</a></li>
+											<li><a href="#resources">Resources</a></li>
 											<li><a href="#leaderboard">Results</a></li>
 											<li><a href="#explore">Visualization</a></li>
 											<li><a href="https://arxiv.org/pdf/2108.11005.pdf">Paper</a></li>
@@ -144,68 +144,14 @@
 	<!-- section start -->
 	<section class="section clearfix no-view secPadding" data-animation-effect="fadeIn">
 		<div class="container">
-			<div class="col-md-12">
-				<h1 id="resources" class="title text-center">Resource</h1>
-				<p class="lead text-center">We provide documents and tools for inspection, preparation, and
-					evaluation of the Wanderlust Challenge.</p>
-				<div class="space"></div>
-				<div class="row">
-					<div class="col-md-6">
-						<img src="images/kcam_wacv16_Page_2_Image_0001.jpg" alt="">
-						<div class="space"></div>
-					</div>
-					<div class="col-md-6">
-						<p>Here we list the sources for Wanderlust Challenge. For instructions on how to setup and
-							use this data, please see the Wanderlust devkit. The following files are available for
-							download:</p>
-						<ul class="list-unstyled">
-							<li><i class="fa fa-arrow-circle-right pr-10 colored"></i><a
-									href="https://arxiv.org/pdf/2108.11005.pdf">Paper</li>
-							<li><i class="fa fa-arrow-circle-right pr-10 colored"></i><a
-									href="https://drive.google.com/drive/folders/1Dg4w3TsAmE4To-3tGhq9Tah8L6vmkMWZ?usp=sharing">Data
-									Download</li>
-							<li><i class="fa fa-arrow-circle-right pr-10 colored"></i><a
-									href="https://drive.google.com/drive/folders/1RaC0zPyKOnNlAr_J8T25GsTSlm-lEu5n?usp=sharing">Video
-									Download</li>
-							<li><i class="fa fa-arrow-circle-right pr-10 colored"></i><a
-									href="https://drive.google.com/drive/folders/1Nnwq6-wqFZ6Cb_bqVwRFyHzJeN5SIkZy?usp=sharing">Label
-									Download</li>
-							<li><i class="fa fa-arrow-circle-right pr-10 colored"></i><a
-									href="https://drive.google.com/drive/folders/17JdMVEfxDwBgiW4bupl3OZ1xL6_pDHuX?usp=sharing">Test
-									Download</li>
-							<li><i class="fa fa-arrow-circle-right pr-10 colored"></i><a
-									href="https://drive.google.com/drive/folders/1_OkrQ35zUhjfcPnykYTe-YgDu17mB2SH?usp=sharing">Validation
-									Download</li>
-							<li><i class="fa fa-arrow-circle-right pr-10 colored"></i><a
-									href="https://drive.google.com/drive/folders/1_OkrQ35zUhjfcPnykYTe-YgDu17mB2SH?usp=sharing"></a>
-								Benchmark</li>
-							<li><i class="fa fa-arrow-circle-right pr-10 colored"></i><a
-									href="https://drive.google.com/drive/folders/1_OkrQ35zUhjfcPnykYTe-YgDu17mB2SH?usp=sharing"></a>
-								Evaluation Toolkit</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- section end -->
-
-	<!-- section start -->
-	<section class="section clearfix no-view secPadding" data-animation-effect="fadeIn">
-		<div class="container">
 			<h1 id="tasks" class="title text-center">Tasks</h1>
 			<div class="space"></div>
-			<h2>Online</h2>
+			<!-- <h2>Online</h2> -->
 			<div class="col-md-12">
 				<div class="col-md-6">
-					<p class="text-justify"> OAK provides a natural data
-						distribution and the task emergence following the trajectories of a single person. A few objects
-						frequently appear due to redundancy in daily routines, while new objects and categories
-						constantly appear as they visit various places. This dataset is a realistic playground to study
-						online continual learning, enables the embodied agent to learn from a human's experience, and
-						provides a unique opportunity for researchers to pursue the essence of lifelong learning by
-						observing the same person in a long time span. We evaluate the performance of a model from three
-						aspects:</p>
+					<p class="text-justify"> OAK provides exhaustive bounding box annotations of 80 video snippets (∼17.5 hours) for 105 object categories
+						in outdoor scenes where 16 classes are from the <a href="http://host.robots.ox.ac.uk/pascal/VOC/">PASCAL VOC dataset</a> and the remaining categories are frequent
+						classes determined by running the <a href="https://www.lvisdataset.org/">LVIS</a> pre-trained <a href="https://github.com/facebookresearch/detectron2/">Mask R-CNN</a> model on the raw videos. We evaluate the performance of a model from three aspects:</p>
 					<ul class="list-unstyled">
 						<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> How well does the model perform
 							overall? (CAP/FAP)
@@ -256,6 +202,55 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- section end -->
+
+	<!-- section start -->
+	<section class="section clearfix no-view secPadding" data-animation-effect="fadeIn">
+		<div class="container">
+			<div class="col-md-12">
+				<h1 id="resources" class="title text-center">Resource</h1>
+				<p class="lead text-center">We provide documents and tools for inspection, preparation, and
+					evaluation of the Wanderlust Challenge.</p>
+				<div class="space"></div>
+				<div class="row">
+					<div class="col-md-6">
+						<img src="images/kcam_wacv16_Page_2_Image_0001.jpg" alt="">
+						<div class="space"></div>
+					</div>
+					<div class="col-md-6">
+						<p>Here we list the sources for Wanderlust Challenge. For instructions on how to setup and
+							use this data, please see the Wanderlust devkit. The following files are available for
+							download:</p>
+						<ul class="list-unstyled">
+							<li><i class="fa fa-arrow-circle-right pr-10 colored"></i><a
+									href="https://arxiv.org/pdf/2108.11005.pdf">Paper</li>
+							<li><i class="fa fa-arrow-circle-right pr-10 colored"></i><a
+									href="https://drive.google.com/drive/folders/1Dg4w3TsAmE4To-3tGhq9Tah8L6vmkMWZ?usp=sharing">Data
+									Download</li>
+							<li><i class="fa fa-arrow-circle-right pr-10 colored"></i><a
+									href="https://drive.google.com/drive/folders/1RaC0zPyKOnNlAr_J8T25GsTSlm-lEu5n?usp=sharing">Video
+									Download</li>
+							<li><i class="fa fa-arrow-circle-right pr-10 colored"></i><a
+									href="https://drive.google.com/drive/folders/1Nnwq6-wqFZ6Cb_bqVwRFyHzJeN5SIkZy?usp=sharing">Label
+									Download</li>
+							<li><i class="fa fa-arrow-circle-right pr-10 colored"></i><a
+									href="https://drive.google.com/drive/folders/17JdMVEfxDwBgiW4bupl3OZ1xL6_pDHuX?usp=sharing">Test
+									Download</li>
+							<li><i class="fa fa-arrow-circle-right pr-10 colored"></i><a
+									href="https://drive.google.com/drive/folders/1_OkrQ35zUhjfcPnykYTe-YgDu17mB2SH?usp=sharing">Validation
+									Download</li>
+							<li><i class="fa fa-arrow-circle-right pr-10 colored"></i><a
+									href="https://drive.google.com/drive/folders/1_OkrQ35zUhjfcPnykYTe-YgDu17mB2SH?usp=sharing"></a>
+								Benchmark</li>
+							<li><i class="fa fa-arrow-circle-right pr-10 colored"></i><a
+									href="https://drive.google.com/drive/folders/1_OkrQ35zUhjfcPnykYTe-YgDu17mB2SH?usp=sharing"></a>
+								Evaluation Toolkit</li>
+						</ul>
 					</div>
 				</div>
 			</div>
