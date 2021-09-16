@@ -133,8 +133,10 @@
 				environments is a critical direction in the computer vision field. However, realistic benchmarks and
 				fundamental studies in this line are still missing. To bridge the gap, we present a new online continual
 				object detection benchmark with an egocentric video dataset, Objects Around Krishna (OAK). The
-				emergence of new object categories in our benchmark follows a pattern similar to what a single person might see in their day-to-day life.
-				The dataset also captures the natural distribution shifts as the person travels to different places. These egocentric long running
+				emergence of new object categories in our benchmark follows a pattern similar to what a single person
+				might see in their day-to-day life.
+				The dataset also captures the natural distribution shifts as the person travels to different places.
+				These egocentric long running
 				videos provide a realistic playground for continual learning algorithms, especially in online embodied
 				settings. </p>
 		</div>
@@ -149,9 +151,14 @@
 			<!-- <h2>Online</h2> -->
 			<div class="col-md-12">
 				<div class="col-md-6">
-					<p class="text-justify"> OAK provides exhaustive bounding box annotations of 80 video snippets (∼17.5 hours) for 105 object categories
-						in outdoor scenes where 16 classes are from the <a href="http://host.robots.ox.ac.uk/pascal/VOC/">PASCAL VOC dataset</a> and the remaining categories are frequent
-						classes determined by running the <a href="https://www.lvisdataset.org/">LVIS</a> pre-trained <a href="https://github.com/facebookresearch/detectron2/">Mask R-CNN</a> model on the raw videos. We evaluate the performance of a model from three aspects:</p>
+					<p class="text-justify"> OAK provides exhaustive bounding box annotations of 80 video snippets
+						(∼17.5 hours) for 105 object categories
+						in outdoor scenes where 16 classes are from the <a
+							href="http://host.robots.ox.ac.uk/pascal/VOC/">PASCAL VOC dataset</a> and the remaining
+						categories are frequent
+						classes determined by running the <a href="https://www.lvisdataset.org/">LVIS</a> pre-trained <a
+							href="https://github.com/facebookresearch/detectron2/">Mask R-CNN</a> model on the raw
+						videos. We evaluate the performance of a model from three aspects:</p>
 					<ul class="list-unstyled">
 						<li><i class="fa fa-arrow-circle-right pr-10 colored"></i> How well does the model perform
 							overall? (CAP/FAP)
@@ -265,46 +272,38 @@
 			<br>
 			<div class="row no-view" data-animation-effect="fadeIn">
 				<div class="col-md-12">
-
 					<!-- isotope filters start -->
 					<div class="filters text-center">
 						<ul class="nav nav-pills">
-							<li><button onclick="odLeaderboard()">Object Detection</button></li>
-							<li><button onclick="icLeaderboard()">Image Classification</button></li>
-							<!-- <li><a href="#" data-filter=".object_detection">Object Detection</a></li>
-							<li><a href="#" data-filter=".image_classification">Image Classification</a></li> -->
-							<!-- <li><a href="#" data-filter=".object_detection">Object Detection</a></li>
-							<li><a href="#" data-filter=".image_classification">Image Classification</a></li> -->
+							<li class="active"><a href="#" data-filter=".object_detection" checked="checked">Object
+									Detection</a></li>
+							<li><a href="#" data-filter=".image_classification">Image Classification</a></li>
 						</ul>
 					</div>
 
-					<div id="odTable"> <!--style="display:none"-->
-						<section id="scrims-ladder--container" class="scrims-ladder">
+					<!-- <div id="object_detection">  -->
+					<!--style="display:none"-->
+					<!-- <section id="scrims-ladder--container" class="scrims-ladder"> -->
+
+					<div class="isotope-container">
+						<div class="col-md-12 isotope-item object_detection">
 							<div class="ladder-nav">
-								<div class="ladder-nav--col ladder-title">
-									<h1>Standings</h1>
-							  	</div>
-								<!-- <div class="ladder-nav--col">
-									<input type="text" class="ladder-search" placeholder="Search Team, Method..." />
-								</div> -->
-							</div>
-							<div class="ladder-nav--results">
-							  	<div class="ladder-nav--results-col">
+								<div class="ladder-nav--results-col">
 									<label>Rank</label>
-							  	</div>
-							  	<div class="ladder-nav--results-col">
+								</div>
+								<div class="ladder-nav--results-col">
 									<label>Method</label>
-							  	</div>
-							  	<div class="ladder-nav--results-col">
+								</div>
+								<div class="ladder-nav--results-col">
 									<label>Team Name</label>
-							  	</div>
-							  	<div class="ladder-nav--results-col">
+								</div>
+								<div class="ladder-nav--results-col">
 									<label>FAP</label>
-							  	</div>
-							  	<div class="ladder-nav--results-col">
+								</div>
+								<div class="ladder-nav--results-col">
 									<label>CAP</label>
-							  	</div>
-							  	<div class="ladder-nav--results-col">
+								</div>
+								<div class="ladder-nav--results-col">
 									<label>F</label>
 								</div>
 								<div class="ladder-nav--results-col">
@@ -312,33 +311,33 @@
 								</div>
 								<div class="ladder-nav--results-col">
 									<label>BWT</label>
-							  	</div>
+								</div>
 							</div>
 							<div class="ladder-nav--results-players">
-							  	<div class="results-col">
+								<div class="results-col">
 									<span class="results-rank"><span class="positions">1</span></span>
-							  	</div>
-							  	<div class="results-col">
+								</div>
+								<div class="results-col">
 									<span class="results-method">iCarl (Faster RCNN)</span>
-							  	</div>
-							  	<div class="results-col">
+								</div>
+								<div class="results-col">
 									<span class="results-team">-</span>
-							  	</div>
-							  	<div class="results-col">
+								</div>
+								<div class="results-col">
 									<span class="results-fap">21.89</span>
-							  	</div>
-							  	<div class="results-col">
+								</div>
+								<div class="results-col">
 									<span class="results-cap">16.39</span>
-							  	</div>
-							  	<div class="results-col">
+								</div>
+								<div class="results-col">
 									<span class="results-f">1.78</span>
 								</div>
 								<div class="results-col">
 									<span class="results-fwt">15.73</span>
-							  	</div>
-							  	<div class="results-col">
+								</div>
+								<div class="results-col">
 									<span class="results-bwt">-5.95</span>
-							  	</div>
+								</div>
 							</div>
 							<div class="ladder-nav--results-players">
 								<div class="results-col">
@@ -358,8 +357,8 @@
 								</div>
 								<div class="results-col">
 									<span class="results-f">5.96</span>
-							  	</div>
-							  	<div class="results-col">
+								</div>
+								<div class="results-col">
 									<span class="results-fwt">14.84</span>
 								</div>
 								<div class="results-col">
@@ -384,8 +383,8 @@
 								</div>
 								<div class="results-col">
 									<span class="results-f">5.77</span>
-							  	</div>
-							  	<div class="results-col">
+								</div>
+								<div class="results-col">
 									<span class="results-fwt">15.01</span>
 								</div>
 								<div class="results-col">
@@ -410,8 +409,8 @@
 								</div>
 								<div class="results-col">
 									<span class="results-f">-</span>
-							  	</div>
-							  	<div class="results-col">
+								</div>
+								<div class="results-col">
 									<span class="results-fwt">-</span>
 								</div>
 								<div class="results-col">
@@ -436,20 +435,180 @@
 								</div>
 								<div class="results-col">
 									<span class="results-f">-</span>
-							  	</div>
-							  	<div class="results-col">
+								</div>
+								<div class="results-col">
 									<span class="results-fwt">-</span>
 								</div>
 								<div class="results-col">
 									<span class="results-bwt">-</span>
 								</div>
 							</div>
-						</section>
+							<!-- </section> -->
+						</div>
 					</div>
-				
+
+					<div class="isotope-container">
+						<div class="col-md-12 isotope-item image_classification">
+							<div class="ladder-nav">
+								<div class="ladder-nav--results-col">
+									<label>Rank</label>
+								</div>
+								<div class="ladder-nav--results-col">
+									<label>Method</label>
+								</div>
+								<div class="ladder-nav--results-col">
+									<label>Team Name</label>
+								</div>
+								<div class="ladder-nav--results-col">
+									<label>FAP</label>
+								</div>
+								<div class="ladder-nav--results-col">
+									<label>CAP</label>
+								</div>
+								<div class="ladder-nav--results-col">
+									<label>F</label>
+								</div>
+								<div class="ladder-nav--results-col">
+									<label>FWT</label>
+								</div>
+								<div class="ladder-nav--results-col">
+									<label>BWT</label>
+								</div>
+							</div>
+							<div class="ladder-nav--results-players">
+								<div class="results-col">
+									<span class="results-rank"><span class="positions">1</span></span>
+								</div>
+								<div class="results-col">
+									<span class="results-method">iCarl (ResNet-50)</span>
+								</div>
+								<div class="results-col">
+									<span class="results-team">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-fap">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-cap">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-f">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-fwt">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-bwt">-</span>
+								</div>
+							</div>
+							<div class="ladder-nav--results-players">
+								<div class="results-col">
+									<span class="results-rank"><span class="positions">2</span></span>
+								</div>
+								<div class="results-col">
+									<span class="results-method">EWC (ResNet-50)</span>
+								</div>
+								<div class="results-col">
+									<span class="results-team">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-fap">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-cap">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-f">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-fwt">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-bwt">-</span>
+								</div>
+							</div>
+							<div class="ladder-nav--results-players">
+								<div class="results-col">
+									<span class="results-rank"><span class="positions">3</span></span>
+								</div>
+								<div class="results-col">
+									<span class="results-method">Incremental (ResNet-50)</span>
+								</div>
+								<div class="results-col">
+									<span class="results-team">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-fap">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-cap">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-f">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-fwt">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-bwt">-</span>
+								</div>
+							</div>
+							<div class="ladder-nav--results-players">
+								<div class="results-col">
+									<span class="results-rank"><span class="positions">4</span></span>
+								</div>
+								<div class="results-col">
+									<span class="results-method">Offline Training (ResNet-50)</span>
+								</div>
+								<div class="results-col">
+									<span class="results-team">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-fap">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-cap">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-f">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-fwt">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-bwt">-</span>
+								</div>
+							</div>
+							<div class="ladder-nav--results-players">
+								<div class="results-col">
+									<span class="results-rank"><span class="positions">5</span></span>
+								</div>
+								<div class="results-col">
+									<span class="results-method">Non-Adaptation (ResNet-50)</span>
+								</div>
+								<div class="results-col">
+									<span class="results-team">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-fap">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-cap">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-f">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-fwt">-</span>
+								</div>
+								<div class="results-col">
+									<span class="results-bwt">-</span>
+								</div>
+							</div>
+							<!-- </section> -->
+						</div>
+					</div>
 					<!-- isotope filters end -->
-
-
 				</div>
 			</div>
 		</div>
@@ -463,505 +622,484 @@
 			<div class="separator"></div>
 			<p class="lead text-center">Label Visualization.</p>
 			<br>
-			<div class="row no-view" data-animation-effect="fadeIn">
-				<div class="col-md-12">
-					<!-- portfolio items start -->
-					<div class="isotope-container row grid-space-20">
-						<div class="col-sm-6 col-md-3 isotope-item detection">
-							<div class="image-box">
-								<div class="overlay-container">
-									<img src="video_samples/20140913_172950_458.png" alt="">
-									<a class="overlay" data-toggle="modal" data-target="#detection-1">
-										<i class="fa fa-search-plus"></i>
+			<div class="row no-view" data-animation-effect="fadeIn"></div>
+			<div class="col-md-12">
+				<!-- portfolio items start -->
+				<div class="col-sm-3">
+					<div class="image-box">
+						<div class="overlay-container">
+							<img src="video_samples/20140913_172950_458.png" alt="">
+							<a class="overlay" data-toggle="modal" data-target="#detection-1">
+								<i class="fa fa-search-plus"></i>
 
-									</a>
-								</div>
-								<a class="btn btn-default btn-block" data-toggle="modal"
-									data-target="#detection-1">20140913</a>
-							</div>
-							<!-- Modal -->
-							<div class="modal fade" id="detection-1" tabindex="-1" role="dialog"
-								aria-labelledby="detection-1-label" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"><span
-													aria-hidden="true">&times;</span><span
-													class="sr-only">Close</span></button>
-											<h4 class="modal-title" id="detection-1-label">20140913</h4>
-										</div>
-										<div class="modal-body">
-
-											<div class="row">
-												<div class="col-md-12">
-													<img src="video_samples/20140913_172950_458.gif" alt="">
-												</div>
-											</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-sm btn-default"
-												data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Modal end -->
+							</a>
 						</div>
-
-						<div class="col-sm-6 col-md-3 isotope-item detection">
-							<div class="image-box">
-								<div class="overlay-container">
-									<img src="video_samples/20141011_120104_835.png" alt="">
-									<a class="overlay" data-toggle="modal" data-target="#detection-2">
-										<i class="fa fa-search-plus"></i>
-
-									</a>
-								</div>
-								<a class="btn btn-default btn-block" data-toggle="modal"
-									data-target="#detection-2">20141011</a>
-							</div>
-							<!-- Modal -->
-							<div class="modal fade" id="detection-2" tabindex="-1" role="dialog"
-								aria-labelledby="detection-2-label" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"><span
-													aria-hidden="true">&times;</span><span
-													class="sr-only">Close</span></button>
-											<h4 class="modal-title" id="detection-2-label">20141011</h4>
-										</div>
-										<div class="modal-body">
-
-											<div class="row">
-												<div class="col-md-12">
-													<img src="video_samples/20141011_120104_835.gif" alt="">
-												</div>
-											</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-sm btn-default"
-												data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Modal end -->
-						</div>
-
-						<div class="col-sm-6 col-md-3 isotope-item detection">
-							<div class="image-box">
-								<div class="overlay-container">
-									<img src="video_samples/20141023_120402_424.png" alt="">
-									<a class="overlay" data-toggle="modal" data-target="#detection-3">
-										<i class="fa fa-search-plus"></i>
-
-									</a>
-								</div>
-								<a class="btn btn-default btn-block" data-toggle="modal"
-									data-target="#detection-3">20141023</a>
-							</div>
-							<!-- Modal -->
-							<div class="modal fade" id="detection-3" tabindex="-1" role="dialog"
-								aria-labelledby="detection-3-label" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"><span
-													aria-hidden="true">&times;</span><span
-													class="sr-only">Close</span></button>
-											<h4 class="modal-title" id="detection-3-label">20141023</h4>
-										</div>
-										<div class="modal-body">
-
-											<div class="row">
-												<div class="col-md-12">
-													<img src="video_samples/20141023_120402_424.gif" alt="">
-												</div>
-											</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-sm btn-default"
-												data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Modal end -->
-						</div>
-
-						<div class="col-sm-6 col-md-3 isotope-item detection">
-							<div class="image-box">
-								<div class="overlay-container">
-									<img src="video_samples/20141026_183826_414.png" alt="">
-									<a class="overlay" data-toggle="modal" data-target="#detection-4">
-										<i class="fa fa-search-plus"></i>
-
-									</a>
-								</div>
-								<a class="btn btn-default btn-block" data-toggle="modal"
-									data-target="#detection-4">20141026</a>
-							</div>
-							<!-- Modal -->
-							<div class="modal fade" id="detection-4" tabindex="-1" role="dialog"
-								aria-labelledby="detection-4-label" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"><span
-													aria-hidden="true">&times;</span><span
-													class="sr-only">Close</span></button>
-											<h4 class="modal-title" id="detection-4-label">20141023</h4>
-										</div>
-										<div class="modal-body">
-
-											<div class="row">
-												<div class="col-md-12">
-													<img src="video_samples/20141026_183826_414.gif" alt="">
-												</div>
-											</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-sm btn-default"
-												data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Modal end -->
-						</div>
-
-						<div class="col-sm-6 col-md-3 isotope-item detection">
-							<div class="image-box">
-								<div class="overlay-container">
-									<img src="video_samples/20141027_131547_425.png" alt="">
-									<a class="overlay" data-toggle="modal" data-target="#detection-5">
-										<i class="fa fa-search-plus"></i>
-
-									</a>
-								</div>
-								<a class="btn btn-default btn-block" data-toggle="modal"
-									data-target="#detection-5">20141027</a>
-							</div>
-							<!-- Modal -->
-							<div class="modal fade" id="detection-5" tabindex="-1" role="dialog"
-								aria-labelledby="detection-5-label" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"><span
-													aria-hidden="true">&times;</span><span
-													class="sr-only">Close</span></button>
-											<h4 class="modal-title" id="detection-5-label">20141027</h4>
-										</div>
-										<div class="modal-body">
-
-											<div class="row">
-												<div class="col-md-12">
-													<img src="video_samples/20141027_131547_425.gif" alt="">
-												</div>
-											</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-sm btn-default"
-												data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Modal end -->
-						</div>
-
-						<div class="col-sm-6 col-md-3 isotope-item detection">
-							<div class="image-box">
-								<div class="overlay-container">
-									<img src="video_samples/20141028_115722_211.png" alt="">
-									<a class="overlay" data-toggle="modal" data-target="#detection-6">
-										<i class="fa fa-search-plus"></i>
-
-									</a>
-								</div>
-								<a class="btn btn-default btn-block" data-toggle="modal"
-									data-target="#detection-6">20141028</a>
-							</div>
-							<!-- Modal -->
-							<div class="modal fade" id="detection-6" tabindex="-1" role="dialog"
-								aria-labelledby="detection-6-label" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"><span
-													aria-hidden="true">&times;</span><span
-													class="sr-only">Close</span></button>
-											<h4 class="modal-title" id="detection-6-label">20141028</h4>
-										</div>
-										<div class="modal-body">
-
-											<div class="row">
-												<div class="col-md-12">
-													<img src="video_samples/20141028_115722_211.gif" alt="">
-												</div>
-											</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-sm btn-default"
-												data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Modal end -->
-						</div>
-
-						<div class="col-sm-6 col-md-3 isotope-item detection">
-							<div class="image-box">
-								<div class="overlay-container">
-									<img src="video_samples/20150130_160543_649.png" alt="">
-									<a class="overlay" data-toggle="modal" data-target="#detection-7">
-										<i class="fa fa-search-plus"></i>
-
-									</a>
-								</div>
-								<a class="btn btn-default btn-block" data-toggle="modal"
-									data-target="#detection-7">20150130</a>
-							</div>
-							<!-- Modal -->
-							<div class="modal fade" id="detection-7" tabindex="-1" role="dialog"
-								aria-labelledby="detection-7-label" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"><span
-													aria-hidden="true">&times;</span><span
-													class="sr-only">Close</span></button>
-											<h4 class="modal-title" id="detection-7-label">20150130</h4>
-										</div>
-										<div class="modal-body">
-
-											<div class="row">
-												<div class="col-md-12">
-													<img src="video_samples/20150130_160543_649.gif" alt="">
-												</div>
-											</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-sm btn-default"
-												data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Modal end -->
-						</div>
-
-						<div class="col-sm-6 col-md-3 isotope-item detection">
-							<div class="image-box">
-								<div class="overlay-container">
-									<img src="video_samples/20150208_160238_593.png" alt="">
-									<a class="overlay" data-toggle="modal" data-target="#detection-8">
-										<i class="fa fa-search-plus"></i>
-
-									</a>
-								</div>
-								<a class="btn btn-default btn-block" data-toggle="modal"
-									data-target="#detection-8">20150208</a>
-							</div>
-							<!-- Modal -->
-							<div class="modal fade" id="detection-8" tabindex="-1" role="dialog"
-								aria-labelledby="detection-8-label" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"><span
-													aria-hidden="true">&times;</span><span
-													class="sr-only">Close</span></button>
-											<h4 class="modal-title" id="detection-8-label">20150208</h4>
-										</div>
-										<div class="modal-body">
-
-											<div class="row">
-												<div class="col-md-12">
-													<img src="video_samples/20150208_160238_593.gif" alt="">
-												</div>
-											</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-sm btn-default"
-												data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Modal end -->
-						</div>
-
-						<div class="col-sm-6 col-md-3 isotope-item detection">
-							<div class="image-box">
-								<div class="overlay-container">
-									<img src="video_samples/20150401_182419_207.png" alt="">
-									<a class="overlay" data-toggle="modal" data-target="#detection-9">
-										<i class="fa fa-search-plus"></i>
-
-									</a>
-								</div>
-								<a class="btn btn-default btn-block" data-toggle="modal"
-									data-target="#detection-9">20150401</a>
-							</div>
-							<!-- Modal -->
-							<div class="modal fade" id="detection-9" tabindex="-1" role="dialog"
-								aria-labelledby="detection-9-label" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"><span
-													aria-hidden="true">&times;</span><span
-													class="sr-only">Close</span></button>
-											<h4 class="modal-title" id="detection-9-label">20150401</h4>
-										</div>
-										<div class="modal-body">
-
-											<div class="row">
-												<div class="col-md-12">
-													<img src="video_samples/20150401_182419_207.gif" alt="">
-												</div>
-											</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-sm btn-default"
-												data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Modal end -->
-						</div>
-
-						<div class="col-sm-6 col-md-3 isotope-item detection">
-							<div class="image-box">
-								<div class="overlay-container">
-									<img src="video_samples/20150512_191941_300.png" alt="">
-									<a class="overlay" data-toggle="modal" data-target="#detection-10">
-										<i class="fa fa-search-plus"></i>
-
-									</a>
-								</div>
-								<a class="btn btn-default btn-block" data-toggle="modal"
-									data-target="#detection-10">20150512</a>
-							</div>
-							<!-- Modal -->
-							<div class="modal fade" id="detection-10" tabindex="-1" role="dialog"
-								aria-labelledby="detection-10-label" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"><span
-													aria-hidden="true">&times;</span><span
-													class="sr-only">Close</span></button>
-											<h4 class="modal-title" id="detection-10-label">20150512</h4>
-										</div>
-										<div class="modal-body">
-
-											<div class="row">
-												<div class="col-md-12">
-													<img src="video_samples/20150512_191941_300.gif" alt="">
-												</div>
-											</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-sm btn-default"
-												data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Modal end -->
-						</div>
-
-						<div class="col-sm-6 col-md-3 isotope-item detection">
-							<div class="image-box">
-								<div class="overlay-container">
-									<img src="video_samples/20150524_205525_707.png" alt="">
-									<a class="overlay" data-toggle="modal" data-target="#detection-11">
-										<i class="fa fa-search-plus"></i>
-
-									</a>
-								</div>
-								<a class="btn btn-default btn-block" data-toggle="modal"
-									data-target="#detection-11">20150524</a>
-							</div>
-							<!-- Modal -->
-							<div class="modal fade" id="detection-11" tabindex="-1" role="dialog"
-								aria-labelledby="detection-11-label" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"><span
-													aria-hidden="true">&times;</span><span
-													class="sr-only">Close</span></button>
-											<h4 class="modal-title" id="detection-11-label">20150524</h4>
-										</div>
-										<div class="modal-body">
-
-											<div class="row">
-												<div class="col-md-12">
-													<img src="video_samples/20150524_205525_707.gif" alt="">
-												</div>
-											</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-sm btn-default"
-												data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Modal end -->
-						</div>
-
-						<div class="col-sm-6 col-md-3 isotope-item detection">
-							<div class="image-box">
-								<div class="overlay-container">
-									<img src="video_samples/20150524_211347_982.png" alt="">
-									<a class="overlay" data-toggle="modal" data-target="#detection-12">
-										<i class="fa fa-search-plus"></i>
-
-									</a>
-								</div>
-								<a class="btn btn-default btn-block" data-toggle="modal"
-									data-target="#detection-12">20150524</a>
-							</div>
-							<!-- Modal -->
-							<div class="modal fade" id="detection-12" tabindex="-1" role="dialog"
-								aria-labelledby="detection-12-label" aria-hidden="true">
-								<div class="modal-dialog modal-lg">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"><span
-													aria-hidden="true">&times;</span><span
-													class="sr-only">Close</span></button>
-											<h4 class="modal-title" id="detection-12-label">20150524</h4>
-										</div>
-										<div class="modal-body">
-
-											<div class="row">
-												<div class="col-md-12">
-													<img src="video_samples/20150524_211347_982.gif" alt="">
-												</div>
-											</div>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-sm btn-default"
-												data-dismiss="modal">Close</button>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- Modal end -->
-						</div>
-
+						<a class="btn btn-default btn-block" data-toggle="modal" data-target="#detection-1">20140913</a>
 					</div>
-					<!-- portfolio items end -->
+					<!-- Modal -->
+					<div class="modal fade" id="detection-1" tabindex="-1" role="dialog"
+						aria-labelledby="detection-1-label" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="detection-1-label">20140913</h4>
+								</div>
+								<div class="modal-body">
 
+									<div class="row">
+										<div class="col-md-12">
+											<img src="video_samples/20140913_172950_458.gif" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+				</div>
+
+				<div class="col-sm-3">
+					<div class="image-box">
+						<div class="overlay-container">
+							<img src="video_samples/20141011_120104_835.png" alt="">
+							<a class="overlay" data-toggle="modal" data-target="#detection-2">
+								<i class="fa fa-search-plus"></i>
+
+							</a>
+						</div>
+						<a class="btn btn-default btn-block" data-toggle="modal" data-target="#detection-2">20141011</a>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="detection-2" tabindex="-1" role="dialog"
+						aria-labelledby="detection-2-label" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="detection-2-label">20141011</h4>
+								</div>
+								<div class="modal-body">
+
+									<div class="row">
+										<div class="col-md-12">
+											<img src="video_samples/20141011_120104_835.gif" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+				</div>
+
+				<div class="col-sm-3">
+					<div class="image-box">
+						<div class="overlay-container">
+							<img src="video_samples/20141023_120402_424.png" alt="">
+							<a class="overlay" data-toggle="modal" data-target="#detection-3">
+								<i class="fa fa-search-plus"></i>
+
+							</a>
+						</div>
+						<a class="btn btn-default btn-block" data-toggle="modal" data-target="#detection-3">20141023</a>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="detection-3" tabindex="-1" role="dialog"
+						aria-labelledby="detection-3-label" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="detection-3-label">20141023</h4>
+								</div>
+								<div class="modal-body">
+
+									<div class="row">
+										<div class="col-md-12">
+											<img src="video_samples/20141023_120402_424.gif" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+				</div>
+
+				<div class="col-sm-3">
+					<div class="image-box">
+						<div class="overlay-container">
+							<img src="video_samples/20141026_183826_414.png" alt="">
+							<a class="overlay" data-toggle="modal" data-target="#detection-4">
+								<i class="fa fa-search-plus"></i>
+
+							</a>
+						</div>
+						<a class="btn btn-default btn-block" data-toggle="modal" data-target="#detection-4">20141026</a>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="detection-4" tabindex="-1" role="dialog"
+						aria-labelledby="detection-4-label" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="detection-4-label">20141023</h4>
+								</div>
+								<div class="modal-body">
+
+									<div class="row">
+										<div class="col-md-12">
+											<img src="video_samples/20141026_183826_414.gif" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+				</div>
+			</div>
+
+			<div class="col-md-12">
+				<div class="col-sm-3">
+					<div class="image-box">
+						<div class="overlay-container">
+							<img src="video_samples/20141027_131547_425.png" alt="">
+							<a class="overlay" data-toggle="modal" data-target="#detection-5">
+								<i class="fa fa-search-plus"></i>
+
+							</a>
+						</div>
+						<a class="btn btn-default btn-block" data-toggle="modal" data-target="#detection-5">20141027</a>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="detection-5" tabindex="-1" role="dialog"
+						aria-labelledby="detection-5-label" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="detection-5-label">20141027</h4>
+								</div>
+								<div class="modal-body">
+
+									<div class="row">
+										<div class="col-md-12">
+											<img src="video_samples/20141027_131547_425.gif" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+				</div>
+
+				<div class="col-sm-3">
+					<div class="image-box">
+						<div class="overlay-container">
+							<img src="video_samples/20141028_115722_211.png" alt="">
+							<a class="overlay" data-toggle="modal" data-target="#detection-6">
+								<i class="fa fa-search-plus"></i>
+
+							</a>
+						</div>
+						<a class="btn btn-default btn-block" data-toggle="modal" data-target="#detection-6">20141028</a>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="detection-6" tabindex="-1" role="dialog"
+						aria-labelledby="detection-6-label" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="detection-6-label">20141028</h4>
+								</div>
+								<div class="modal-body">
+
+									<div class="row">
+										<div class="col-md-12">
+											<img src="video_samples/20141028_115722_211.gif" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+				</div>
+
+				<div class="col-sm-3">
+					<div class="image-box">
+						<div class="overlay-container">
+							<img src="video_samples/20150130_160543_649.png" alt="">
+							<a class="overlay" data-toggle="modal" data-target="#detection-7">
+								<i class="fa fa-search-plus"></i>
+
+							</a>
+						</div>
+						<a class="btn btn-default btn-block" data-toggle="modal" data-target="#detection-7">20150130</a>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="detection-7" tabindex="-1" role="dialog"
+						aria-labelledby="detection-7-label" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="detection-7-label">20150130</h4>
+								</div>
+								<div class="modal-body">
+
+									<div class="row">
+										<div class="col-md-12">
+											<img src="video_samples/20150130_160543_649.gif" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+				</div>
+
+				<div class="col-sm-3">
+					<div class="image-box">
+						<div class="overlay-container">
+							<img src="video_samples/20150208_160238_593.png" alt="">
+							<a class="overlay" data-toggle="modal" data-target="#detection-8">
+								<i class="fa fa-search-plus"></i>
+
+							</a>
+						</div>
+						<a class="btn btn-default btn-block" data-toggle="modal" data-target="#detection-8">20150208</a>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="detection-8" tabindex="-1" role="dialog"
+						aria-labelledby="detection-8-label" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="detection-8-label">20150208</h4>
+								</div>
+								<div class="modal-body">
+
+									<div class="row">
+										<div class="col-md-12">
+											<img src="video_samples/20150208_160238_593.gif" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+				</div>
+
+			</div>
+
+			<div class="col-md-12">
+				<div class="col-sm-3">
+					<div class="image-box">
+						<div class="overlay-container">
+							<img src="video_samples/20150401_182419_207.png" alt="">
+							<a class="overlay" data-toggle="modal" data-target="#detection-9">
+								<i class="fa fa-search-plus"></i>
+
+							</a>
+						</div>
+						<a class="btn btn-default btn-block" data-toggle="modal" data-target="#detection-9">20150401</a>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="detection-9" tabindex="-1" role="dialog"
+						aria-labelledby="detection-9-label" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="detection-9-label">20150401</h4>
+								</div>
+								<div class="modal-body">
+
+									<div class="row">
+										<div class="col-md-12">
+											<img src="video_samples/20150401_182419_207.gif" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+				</div>
+
+				<div class="col-sm-3">
+					<div class="image-box">
+						<div class="overlay-container">
+							<img src="video_samples/20150512_191941_300.png" alt="">
+							<a class="overlay" data-toggle="modal" data-target="#detection-10">
+								<i class="fa fa-search-plus"></i>
+
+							</a>
+						</div>
+						<a class="btn btn-default btn-block" data-toggle="modal"
+							data-target="#detection-10">20150512</a>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="detection-10" tabindex="-1" role="dialog"
+						aria-labelledby="detection-10-label" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="detection-10-label">20150512</h4>
+								</div>
+								<div class="modal-body">
+
+									<div class="row">
+										<div class="col-md-12">
+											<img src="video_samples/20150512_191941_300.gif" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+				</div>
+
+				<div class="col-sm-3">
+					<div class="image-box">
+						<div class="overlay-container">
+							<img src="video_samples/20150524_205525_707.png" alt="">
+							<a class="overlay" data-toggle="modal" data-target="#detection-11">
+								<i class="fa fa-search-plus"></i>
+
+							</a>
+						</div>
+						<a class="btn btn-default btn-block" data-toggle="modal"
+							data-target="#detection-11">20150524</a>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="detection-11" tabindex="-1" role="dialog"
+						aria-labelledby="detection-11-label" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="detection-11-label">20150524</h4>
+								</div>
+								<div class="modal-body">
+
+									<div class="row">
+										<div class="col-md-12">
+											<img src="video_samples/20150524_205525_707.gif" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
+				</div>
+
+
+				<div class="col-sm-3">
+					<div class="image-box">
+						<div class="overlay-container">
+							<img src="video_samples/20150524_211347_982.png" alt="">
+							<a class="overlay" data-toggle="modal" data-target="#detection-12">
+								<i class="fa fa-search-plus"></i>
+
+							</a>
+						</div>
+						<a class="btn btn-default btn-block" data-toggle="modal"
+							data-target="#detection-12">20150524</a>
+					</div>
+					<!-- Modal -->
+					<div class="modal fade" id="detection-12" tabindex="-1" role="dialog"
+						aria-labelledby="detection-12-label" aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span
+											aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h4 class="modal-title" id="detection-12-label">20150524</h4>
+								</div>
+								<div class="modal-body">
+
+									<div class="row">
+										<div class="col-md-12">
+											<img src="video_samples/20150524_211347_982.gif" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-sm btn-default"
+										data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal end -->
 				</div>
 			</div>
 		</div>
@@ -997,26 +1135,6 @@
 
 	<!-- Custom Scripts -->
 	<script type="text/javascript" src="js/custom.js"></script>
-	<script>
-		function odLeaderboard() {
-		  var x = document.getElementById("odTable");
-		  if (x.style.display === "none") {
-			x.style.display = "block";
-		  } else {
-			x.style.display = "none";
-		  }
-		}
-	</script>
-	<script>
-		function icLeaderboard() {
-		  var x = document.getElementById("icTable");
-		  if (x.style.display === "none") {
-			x.style.display = "block";
-		  } else {
-			x.style.display = "none";
-		  }
-		}
-	</script>
 
 </body>
 
